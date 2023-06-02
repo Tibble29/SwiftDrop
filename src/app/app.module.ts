@@ -25,6 +25,9 @@ import { HeaderComponent } from './header/header.component';
 import { MatBadgeModule } from '@angular/material/badge';
 import { LiveDeliveriesComponent } from './live-deliveries/live-deliveries.component';
 import { GoogleMapsModule } from '@angular/google-maps'
+import { SingleDeliveryComponent } from './single-delivery/single-delivery.component';
+import { RoundedCardComponent } from './items/rounded-card/rounded-card.component';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -39,10 +42,13 @@ import { GoogleMapsModule } from '@angular/google-maps'
     MemosComponent,
     SidebarComponent,
     HeaderComponent,
-    LiveDeliveriesComponent
+    LiveDeliveriesComponent,
+    SingleDeliveryComponent,
+    RoundedCardComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     FormsModule,
     MatTableModule,

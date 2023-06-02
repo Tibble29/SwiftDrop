@@ -1,56 +1,123 @@
-.message-form {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  select,
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  .message-form {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  label {
-    font-weight: bold;
-  }
-  
-  textarea {
-    height: 120px;
-    resize: vertical;
-  }
-  
-  button {
-    width: 100%;
-  }
-  
+.card-list {
+  display: flex;
+  border-top: 1px solid #DDD;
+}
+
+.cards-container {
+  width: 30%;
+}
+
+.card {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-top: none !important;
+  margin-bottom: -1px;
+  cursor: pointer;
+}
+
+.card.selected {
+  background-color: #f0f0f0;
+}
+
+.card .header {
+  display: flex;
+  align-items: center;
+}
+
+.card .header .circle {
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -15px;
+}
+
+.card .header .circle .initials {
+  font-weight: bold;
+}
+
+.card .date {
+  margin-top: 10px;
+  color: #777;
+}
+
+.card.unread {
+  border-left: 5px solid red;
+  padding-left: 10px;
+}
+
+.full-message {
+  width: 70%;
+  margin-left: -1px;
+  border: 1px solid #DDD;
+  height: 80vh;
+  position: relative;
+  border-top: none !important
+}
+
+.full-message .header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #DDD;
+  padding: 20px 10px;
+}
+
+.full-message .header .circle {
+  width: 40px;
+  height: 40px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-message .header .circle .initials {
+  font-weight: bold;
+}
+
+.full-message p {
+  margin-top: 10px;
+}
+
+.full-message .date {
+  color: #777;
+  position: absolute;
+  left: 67px;
+  top: 50px;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.message-content {
+  padding: 20px;
+}
+
+.full-message .date.unread {
+  border-left: 10px solid blue;
+  padding-left: 10px;
+}
+
+.control-panel {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+}
+
+.icon {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+h4 {
+  text-align: center;
+  color: grey;
+  font-size: 30px;
+  margin-top: 20px;
+}

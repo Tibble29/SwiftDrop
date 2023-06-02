@@ -1,0 +1,20 @@
+.rounded-card {
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+}
+
+.time {
+  color: #888;
+}
